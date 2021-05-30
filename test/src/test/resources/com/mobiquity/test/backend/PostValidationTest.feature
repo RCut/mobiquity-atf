@@ -32,15 +32,6 @@ Feature: Jsonplaceholder API Post validation
       | Bret      |
       | Antonette |
 
-  Scenario Outline: Filter posts by invalid userId - <username>
-    When user requests a list of posts by '<username>' user from jsonplaceholder API service
-    Then a list of posts by the user is returned
-    And the list of posts is empty
-    Examples:
-      | username |
-      | Joffrey  |
-      |          |
-
   Scenario Outline: Filter comments by postId - <username>
     When user requests a list of posts by '<username>' user from jsonplaceholder API service
     Then a list of posts by the user is returned
@@ -50,15 +41,6 @@ Feature: Jsonplaceholder API Post validation
       | Delphine  |
       | Bret      |
       | Antonette |
-
-  Scenario Outline: Filter comments by invalid postId - <username>
-    When user requests a list of posts by '<username>' user from jsonplaceholder API service
-    Then a list of posts by the user is returned
-    And the list of posts is empty
-    Examples:
-      | username |
-      | Delphine |
-      | Bret     |
 
   Scenario Outline: Validate comments emails under user's posts - <username>
     When user requests a user with username '<username>' from jsonplaceholder API service

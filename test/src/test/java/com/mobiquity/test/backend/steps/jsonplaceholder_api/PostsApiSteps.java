@@ -53,9 +53,13 @@ public class PostsApiSteps extends BaseApiSteps {
 
     @When("comments for each post from the list of posts are requested from jsonplaceholder API service")
     public void commentsForEachPostFromTheListOfPostsAreRequested() {
-        List<Comment> filteredComments = scenarioContext.<List<Post>>get(POSTS)
+        List<String> postIdList = scenarioContext.<List<Post>>get(POSTS)
                 .stream()
-                .flatMap(post -> jsonplaceholderApiActions.getCommentsByPostId(post.getId()).stream())
+                .map(Post::getId)
+                .toList();
+        List<Comment> filteredComments = jsonplaceholderApiActions.getComments()
+                .stream()
+                .filter(x -> postIdList.contains(x.getPostId()))
                 .toList();
         scenarioContext.save(COMMENTS, filteredComments);
     }

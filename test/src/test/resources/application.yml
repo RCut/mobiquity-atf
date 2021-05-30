@@ -1,2 +1,8 @@
 backend:
-  baseUrl: http://localhost:3000/
+  jsonplaceholder:
+    baseUrl: https://jsonplaceholder.typicode.com
+
+    endpoints:
+      users: /users
+      posts: /posts
+      comments: /comments

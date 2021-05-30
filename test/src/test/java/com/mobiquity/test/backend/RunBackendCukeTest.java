@@ -8,7 +8,6 @@ import org.junit.runner.RunWith;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.test.context.SpringBootTest;
 
-//@Cucumber
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/resources/com/mobiquity/test/backend",

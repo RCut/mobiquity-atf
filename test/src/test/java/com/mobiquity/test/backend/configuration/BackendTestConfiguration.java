@@ -11,6 +11,7 @@ import org.springframework.context.annotation.ComponentScan;
         "com.mobiquity.test.common",
         "com.mobiquity.test.backend",
         "com.mobiquity.domain.backend",
+        "com.mobiquity.core.services",
 })
 @ConfigurationProperties("backend")
 public class BackendTestConfiguration {

@@ -39,6 +39,6 @@ public class UsersApiSteps extends BaseApiSteps {
         List<User> users = scenarioContext.get(USERS);
         var actualUser = users.stream().filter(x -> x.getUsername().equals(username)).findFirst();
         assertThat("users list contains details of " + username + " user", actualUser.isPresent(), is(true));
-        scenarioContext.save(USER, actualUser);
+        scenarioContext.save(USER, actualUser.get());
     }
 }

@@ -19,12 +19,14 @@
         <maven.compiler.target>16</maven.compiler.target>
         <cucumber.version>6.10.3</cucumber.version>
         <spring-boot.version>2.4.5</spring-boot.version>
+        <spring.version>5.3.7</spring.version>
         <rest-assured.version>4.3.3</rest-assured.version>
         <lombok.version>1.18.20</lombok.version>
         <aspectj.version>1.9.6</aspectj.version>
         <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
         <allure-maven.version>2.8</allure-maven.version>
         <allure.version>2.14.0</allure.version>
+        <jackson-databind.version>2.12.3</jackson-databind.version>
     </properties>
 
     <dependencyManagement>
@@ -33,7 +35,11 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
                 <version>${spring-boot.version}</version>
-                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.cucumber</groupId>
@@ -68,6 +74,12 @@
                 <groupId>io.qameta.allure</groupId>
                 <artifactId>allure-cucumber6-jvm</artifactId>
                 <version>${allure.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson-databind.version}</version>
+                <scope>compile</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
