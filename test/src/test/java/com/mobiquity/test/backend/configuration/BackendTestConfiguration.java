@@ -9,7 +9,8 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootConfiguration
 @ComponentScan(basePackages = {
         "com.mobiquity.test.common",
-        "com.mobiquity.test.backend"
+        "com.mobiquity.test.backend",
+        "com.mobiquity.domain.backend",
 })
 @ConfigurationProperties("backend")
 public class BackendTestConfiguration {

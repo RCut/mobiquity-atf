@@ -22,5 +22,4 @@ public class ScenarioContext {
     public void clear() {
         data.clear();
     }
-
 }

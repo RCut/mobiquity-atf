@@ -42,6 +42,13 @@
             <artifactId>allure-cucumber6-jvm</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.mobiquity</groupId>
+            <artifactId>domain</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
