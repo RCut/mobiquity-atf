@@ -7,7 +7,8 @@ testing.</p>
 enhanced.</p>
 <h3>Tech stack</h3>
 <ul>
-    <li>Spring boot</li>
-    <li>Cucumber + Junit 5 (junit-platform)</li>
+    <li>Spring Boot</li>
+    <li>Cucumber + Junit 4</li>
+    <li>Allure</li>
     <li>RestAssured</li>
 </ul>
