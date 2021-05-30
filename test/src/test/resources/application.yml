@@ -1,0 +1,8 @@
+backend:
+  jsonplaceholder:
+    baseUrl: https://jsonplaceholder.typicode.com
+
+    endpoints:
+      users: /users
+      posts: /posts
+      comments: /comments
