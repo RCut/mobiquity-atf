@@ -1,7 +1,7 @@
 Feature: Jsonplaceholder API Post validation
 
-  Background:
-    Given jsonplaceholder API service is set up
+#  Background:
+#    Given jsonplaceholder API service is set up
 
   Scenario Outline: Filter user by username - <username>
     When user requests a user with username '<username>' from jsonplaceholder API service
