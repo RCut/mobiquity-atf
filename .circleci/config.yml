@@ -19,8 +19,8 @@ jobs:
       - checkout
       # Use mvn clean and package as the standard maven build phase
       - run:
-          name: allure
-          command: install
+          name: Allure install
+          command: allure/install
       - run:
           name: Build
           command: mvn -B -DskipTests clean package
@@ -29,8 +29,8 @@ jobs:
           name: Test
           command: mvn test
       - run:
-          name: allure
-          command: report
+          name: Allure report
+          command: allure/report
 
 workflows:
   # Below is the definition of your workflow.
