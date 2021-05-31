@@ -12,3 +12,8 @@ enhanced.</p>
     <li>Allure</li>
     <li>RestAssured</li>
 </ul>
+<h2>Test execution</h2>
+<b>Backend tests</b> (API) can be executed using:
+<li><code>com.mobiquity.test.backend.RunBackendCukeTest</code> test runner</li>
+<li><code>mvn clean test</code> command</li>
+<p><b>Allure</b> reports can be displayed using the <code>mvn allure:serve</code> command</p>
