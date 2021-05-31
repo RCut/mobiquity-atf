@@ -17,3 +17,7 @@ enhanced.</p>
 <li><code>com.mobiquity.test.backend.RunBackendCukeTest</code> test runner</li>
 <li><code>mvn clean test</code> command</li>
 <p><b>Allure</b> reports can be displayed using the <code>mvn allure:serve</code> command</p>
+<h3>Accessing CircleCI</h3>
+<p>Use the invite link below to access the CircleCI pipeline and view the latest runs or run the pipeline manually.</p>
+<p>https://app.circleci.com/pipelines/github/RCut/mobiquity-atf?invite=true</p>
+<p>The Allure test report can be found in <code>build-and-test</code> job's Artifacts section upon completion.</p>
