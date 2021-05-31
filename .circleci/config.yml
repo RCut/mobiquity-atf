@@ -19,9 +19,7 @@ jobs:
       - run:
           name: Test
           command: mvn test
-      - allure/report:
-          results-path: test/target/allure-results
-          configuration-path: test/src/test/resources/allure.properties
+      - allure/report
 
 workflows:
   sample: 
