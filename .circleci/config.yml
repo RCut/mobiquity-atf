@@ -11,8 +11,7 @@ jobs:
       - image: cimg/openjdk:16.0
     steps:
       - checkout
-      - allure/install:
-          version: 2.14.0
+      - allure/install
       - run:
           name: Build
           command: mvn -B -DskipTests clean package
