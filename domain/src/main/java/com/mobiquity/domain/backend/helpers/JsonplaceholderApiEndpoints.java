@@ -8,9 +8,5 @@ import lombok.Getter;
 public enum JsonplaceholderApiEndpoints {
     USERS,
     POSTS,
-    COMMENTS;
-
-    public String asLowerCase(){
-        return name().toLowerCase();
-    }
+    COMMENTS
 }
