@@ -25,6 +25,9 @@ jobs:
       - run:
           name: Test
           command: mvn test
+      - run:
+          name: Report
+          command: mvn allure:serve
 
 workflows:
   # Below is the definition of your workflow.
